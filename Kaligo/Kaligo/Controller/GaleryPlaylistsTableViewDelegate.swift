@@ -27,7 +27,11 @@ class GaleryPlaylistsTableViewDelegate: NSObject, UITableViewDelegate, UITableVi
         if section == 0 {
             return 1
         } else {
-            return playlists?.count ?? 0
+            if filter == .playlists {
+                return playlists?.count ?? 0
+            } else {
+                return tips?.count ?? 0
+            }
         }
     }
     

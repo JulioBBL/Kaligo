@@ -24,6 +24,11 @@
 		E423ADFD246F0F7C009F42C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E423ADFB246F0F7C009F42C3 /* Main.storyboard */; };
 		E423ADFF246F0F7E009F42C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E423ADFE246F0F7E009F42C3 /* Assets.xcassets */; };
 		E423AE02246F0F7E009F42C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E423AE00246F0F7E009F42C3 /* LaunchScreen.storyboard */; };
+		E47EB20D246F1C77004651A2 /* Posts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E47EB20C246F1C77004651A2 /* Posts.storyboard */; };
+		E47EB20F246F244B004651A2 /* SegmentedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47EB20E246F244B004651A2 /* SegmentedCollectionViewCell.swift */; };
+		E47EB211246F336D004651A2 /* PlaylistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47EB210246F336D004651A2 /* PlaylistTableViewCell.swift */; };
+		E47EB213246F3438004651A2 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47EB212246F3438004651A2 /* PostsViewController.swift */; };
+		E47EB218246F34DC004651A2 /* FilterCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47EB217246F34DC004651A2 /* FilterCollectionViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,11 @@
 		E423ADFE246F0F7E009F42C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E423AE01246F0F7E009F42C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E423AE03246F0F7E009F42C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E47EB20C246F1C77004651A2 /* Posts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Posts.storyboard; sourceTree = "<group>"; };
+		E47EB20E246F244B004651A2 /* SegmentedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedCollectionViewCell.swift; sourceTree = "<group>"; };
+		E47EB210246F336D004651A2 /* PlaylistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewCell.swift; sourceTree = "<group>"; };
+		E47EB212246F3438004651A2 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		E47EB217246F34DC004651A2 /* FilterCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,13 +134,44 @@
 				826CA01124739285006A543D /* Login */,
 				E423ADF5246F0F7C009F42C3 /* AppDelegate.swift */,
 				E423ADF7246F0F7C009F42C3 /* SceneDelegate.swift */,
-				E423ADF9246F0F7C009F42C3 /* ViewController.swift */,
-				E423ADFB246F0F7C009F42C3 /* Main.storyboard */,
 				E423ADFE246F0F7E009F42C3 /* Assets.xcassets */,
-				E423AE00246F0F7E009F42C3 /* LaunchScreen.storyboard */,
 				E423AE03246F0F7E009F42C3 /* Info.plist */,
 			);
 			path = Kaligo;
+			sourceTree = "<group>";
+		};
+		E47EB214246F3489004651A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E47EB215246F3491004651A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E423ADFB246F0F7C009F42C3 /* Main.storyboard */,
+				E423AE00246F0F7E009F42C3 /* LaunchScreen.storyboard */,
+				E47EB20C246F1C77004651A2 /* Posts.storyboard */,
+				E47EB20E246F244B004651A2 /* SegmentedCollectionViewCell.swift */,
+				87DF6290247304A2002B8FCE /* SegmentedHomeCollectionViewCell.swift */,
+				87DF6292247304FC002B8FCE /* CategoriasHomeTableViewCell.swift */,
+				E47EB210246F336D004651A2 /* PlaylistTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E47EB216246F349C004651A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E423ADF9246F0F7C009F42C3 /* ViewController.swift */,
+				87DF6294247305EC002B8FCE /* HomeViewController.swift */,
+				87DF62962473101E002B8FCE /* HomeCollectionViewDelegate.swift */,
+				87DF629824731938002B8FCE /* HomeTableViewDelegate.swift */,
+				E47EB212246F3438004651A2 /* PostsViewController.swift */,
+				E47EB217246F34DC004651A2 /* FilterCollectionViewDelegate.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +242,7 @@
 				826CA017247393E0006A543D /* Login.storyboard in Resources */,
 				E423AE02246F0F7E009F42C3 /* LaunchScreen.storyboard in Resources */,
 				E423ADFF246F0F7E009F42C3 /* Assets.xcassets in Resources */,
+				87DF629F24733AF9002B8FCE /* AwesomeReviewView.xib in Resources */,
 				E423ADFD246F0F7C009F42C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
